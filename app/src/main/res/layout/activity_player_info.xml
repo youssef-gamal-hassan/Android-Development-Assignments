@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerInfo"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/arrowRight2"
+        android:layout_width="26dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/dobTV2"
+        app:layout_constraintEnd_toStartOf="@+id/clubToImage"
+        app:layout_constraintStart_toEndOf="@+id/clubFromImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrowright" />
+
+    <ImageView
+        android:id="@+id/clubToImage"
+        android:layout_width="42dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/dobTV2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/arrowRight2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/clubFromImage"
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/dobTV"
+        app:layout_constraintEnd_toStartOf="@+id/arrowRight2"
+        app:layout_constraintStart_toEndOf="@+id/playerNameTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/playerImageIV"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dobTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <TextView
+        android:id="@+id/playerNameTextView"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="36dp"
+        android:text="R. Lewandowski"
+        android:textColor="#4582A8"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/playerImageIV"
+        app:layout_constraintEnd_toStartOf="@+id/clubFromImage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/heightTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Height"
+        app:layout_constraintBottom_toTopOf="@+id/contractTV2"
+        app:layout_constraintStart_toStartOf="@+id/natTV2" />
+
+    <TextView
+        android:id="@+id/posTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position"
+        app:layout_constraintStart_toStartOf="@+id/contractTV2"
+        app:layout_constraintTop_toBottomOf="@+id/contractTV2" />
+
+    <TextView
+        android:id="@+id/cClubTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Current Club"
+        android:textColor="#4582A8"
+        app:layout_constraintBottom_toTopOf="@+id/iClubTV2"
+        app:layout_constraintStart_toStartOf="@+id/footTV2" />
+
+    <TextView
+        android:id="@+id/ageTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        app:layout_constraintStart_toStartOf="@+id/dobTV2"
+        app:layout_constraintTop_toBottomOf="@+id/dobTV2" />
+
+    <TextView
+        android:id="@+id/dobTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="65dp"
+        android:text="Date of Birth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dobTV"
+        app:layout_constraintTop_toBottomOf="@+id/clubFromImage" />
+
+    <TextView
+        android:id="@+id/footTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foot"
+        app:layout_constraintBottom_toTopOf="@+id/cClubTV2"
+        app:layout_constraintStart_toStartOf="@+id/posTV2" />
+
+    <TextView
+        android:id="@+id/contractTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="Contract Until"
+        app:layout_constraintBottom_toTopOf="@+id/footTV2"
+        app:layout_constraintStart_toStartOf="@+id/heightTV2" />
+
+    <TextView
+        android:id="@+id/iClubTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Interested Club"
+        android:textColor="#4582A8"
+        app:layout_constraintStart_toStartOf="@+id/cClubTV2"
+        app:layout_constraintTop_toTopOf="@+id/iClubTV" />
+
+    <TextView
+        android:id="@+id/natTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Nat."
+        app:layout_constraintStart_toStartOf="@+id/ageTV2"
+        app:layout_constraintTop_toBottomOf="@+id/ageTV2" />
+
+    <TextView
+        android:id="@+id/natTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Nat."
+        app:layout_constraintStart_toStartOf="@+id/ageTV"
+        app:layout_constraintTop_toBottomOf="@+id/ageTV" />
+
+    <TextView
+        android:id="@+id/contractTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Contract Until"
+        app:layout_constraintStart_toStartOf="@+id/heightTV"
+        app:layout_constraintTop_toTopOf="@+id/heightTV" />
+
+    <TextView
+        android:id="@+id/footTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Foot"
+        app:layout_constraintStart_toStartOf="@+id/posTV"
+        app:layout_constraintTop_toBottomOf="@+id/posTV" />
+
+    <TextView
+        android:id="@+id/iClubTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Interested Club"
+        app:layout_constraintStart_toStartOf="@+id/cClubTV"
+        app:layout_constraintTop_toBottomOf="@+id/cClubTV" />
+
+    <TextView
+        android:id="@+id/heightTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Height"
+        app:layout_constraintStart_toStartOf="@+id/natTV"
+        app:layout_constraintTop_toBottomOf="@+id/natTV" />
+
+    <TextView
+        android:id="@+id/posTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position"
+        app:layout_constraintStart_toStartOf="@+id/contractTV"
+        app:layout_constraintTop_toBottomOf="@+id/contractTV" />
+
+    <TextView
+        android:id="@+id/cClubTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Current Club"
+        app:layout_constraintStart_toStartOf="@+id/footTV"
+        app:layout_constraintTop_toTopOf="@+id/footTV" />
+
+    <TextView
+        android:id="@+id/ageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        app:layout_constraintStart_toStartOf="@+id/dobTV"
+        app:layout_constraintTop_toBottomOf="@+id/dobTV" />
+
+    <TextView
+        android:id="@+id/dobTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Date of Birth"
+        app:layout_constraintEnd_toStartOf="@+id/dobTV2"
+        app:layout_constraintStart_toEndOf="@+id/playerImageIV"
+        app:layout_constraintTop_toBottomOf="@+id/playerNameTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
