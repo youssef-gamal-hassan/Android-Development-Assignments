@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Assignment 3</string>
+    <string name="Quantity">Cantidad</string>
+    <string name="Subtotal">Total Parcial</string>
+    <string name="Shipping">Envio</string>
+    <string name="Total">Total</string>
+    <string name="ADD_TO_CART">Anadir a la Cesta</string>
+    <string name="Warning">El total de su carrito ha excedido los $200</string>
+</resources>
